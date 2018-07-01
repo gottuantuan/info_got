@@ -8,7 +8,7 @@ from redis import StrictRedis
 from flask_wtf import  CSRFProtect,csrf
 
 db = SQLAlchemy()
-redis_store = StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT ,decode_responses=True)
+redis_store = StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT, decode_responses=True)
 
 # 集成项目日志
 # 设置日志的记录等级

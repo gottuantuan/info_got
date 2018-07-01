@@ -1,13 +1,13 @@
 from .CCPRestSDK import REST
 
 # 说明：主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
-_accountSid = '8aaf070858862df301588a202b520154'
+_accountSid = '8a216da8643658de0164417f4b620814'
 
 # 说明：主账号Token，登陆云通讯网站后，可在控制台-应用中看到开发者主账号AUTH TOKEN
-_accountToken = 'd42ff3839c2f4defa0361e5e11234b11'
+_accountToken = '2b450950f71e444c979b12d14786ad1f'
 
 # 请使用管理控制台首页的APPID或自己创建应用的APPID
-_appId = '8aaf070858862df301588a202ba50159'
+_appId = '8a216da8643658de0164417f4bb6081a'
 
 # 说明：请求地址，生产环境配置成app.cloopen.com
 _serverIP = 'sandboxapp.cloopen.com'
