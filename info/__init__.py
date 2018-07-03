@@ -30,16 +30,27 @@ def create_app(config_name):
     db.init_app(app)
     Session(app)
     CSRFProtect(app)
+
+    # 导入过滤器
+    from info.utils.commons import index_class
+    app.add_template_filter(index_class, 'index_class')
+
+    # 蓝图
+
     from  info.modules.news import new_blue
     app.register_blueprint(new_blue)
     from info.modules.passport import passport_blue
     app.register_blueprint(passport_blue)
+    from info.modules.profile import profile_blue
+    app.register_blueprint(profile_blue)
+
 
     @app.after_request
     def after_request(response):
         csrf_token = csrf.generate_csrf()
         response.set_cookie('csrf_token', csrf_token)
         return response
+
 
 
     return app
