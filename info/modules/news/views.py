@@ -197,6 +197,12 @@ def login():
     session['nick_name'] = user.nick_name
     return jsonify(errno=RET.OK,errmsg='登陆成功')
 
+
+
+
+
 @new_blue.route('/favicon.ico')
 def favicon():
     return current_app.send_static_file('news/favicon.ico')
+
+

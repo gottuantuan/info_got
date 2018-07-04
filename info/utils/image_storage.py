@@ -3,7 +3,7 @@ from qiniu import Auth, put_data
 access_key = 'XSOF7q0mcz3NkFDeXoiKL1SliQswpGp5sSvD44Pu'
 secret_key = '1zTYK17VvDIvFHEILU-gp89bM3c4FPTFF7DtISsj'
 
-bucket_name = 'info'
+bucket_name = 'infogot'
 
 
 def storage(data):
