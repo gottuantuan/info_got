@@ -12,8 +12,8 @@ manage.add_command('db', MigrateCommand)
 
 
 
-@manage.option('-n','name', dest = 'name')
-@manage.option('-p','password',dest = 'password')
+@manage.option('-n','-name', dest = 'name')
+@manage.option('-p' ,'-password',dest = 'password')
 def create_Supperuser(name,password):
     if not all([name,password]):
         print('参数缺失')

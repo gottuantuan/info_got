@@ -43,6 +43,8 @@ def create_app(config_name):
     app.register_blueprint(passport_blue)
     from info.modules.profile import profile_blue
     app.register_blueprint(profile_blue)
+    from info.modules.admin import  admin_blue
+    app.register_blueprint(admin_blue)
 
 
     @app.after_request
